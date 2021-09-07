@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   const [query, setQuery] = useState("");
-  const [forecast, setForecast] = useState({});
+  const [forecast, setForecast] = useState({} as any);
 
   const search = async (e: React.KeyboardEvent<any>) => {
     if (e.key === "Enter") {
